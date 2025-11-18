@@ -8,9 +8,12 @@
 img {
     max-width: 100%;
 }
+
 /* COMMON */
 
-
+body {
+    background-image: url(../img/cork.png);
+}
 
 /* Typography */
 
@@ -21,6 +24,9 @@ body {
 
 .my-title {
     font-family: "Edu Tas Beginner", sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+
 }
 
 .my-date {
@@ -29,4 +35,47 @@ body {
 
 /* Layout */
 
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Utilities */
+
+.m-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.m-col {
+    width: 30%;
+    border: 1px black solid;
+}
+
+.m-flex {
+    display: flex;
+}
+
+.m-justify-content-between {
+    justify-content: space-between;
+}
+
+.m-wrap {
+    flex-wrap: wrap;
+}
+
+.m-mt-30 {
+    margin-top: 30px;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: lightgrey;
+    background-image: url(../img/wall.png);
+    height: 100px;
+
+}

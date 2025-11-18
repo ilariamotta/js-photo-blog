@@ -49,6 +49,8 @@ body {
     align-items: center;
 }
 
+
+
 /* Utilities */
 
 .m-container {
@@ -63,7 +65,6 @@ body {
 
 .m-col {
     width: 100%;
-    border: 1px black solid;
     margin-bottom: 20px;
 }
 
@@ -141,7 +142,11 @@ header {
 /* tablet */
 @media screen and (min-width: 768px) {
     .m-col {
-        width: 50%;
+        width: calc(50% - 10px);
+    }
+
+    #polaroid-grid {
+        gap: 10px;
     }
 }
 /* desktop */

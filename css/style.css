@@ -93,6 +93,10 @@ body {
     margin-top: 30px;
 }
 
+.m-dnone {
+    display: none;
+}
+
 /* HEADER */
 
 header {
@@ -133,6 +137,18 @@ header {
 
 .m-card-body p {
     margin: 0px;
+}
+
+/* hover */
+
+
+
+.m-card:hover {
+    transform: rotateZ(3deg)
+}
+
+.m-card:hover .m-pin {
+    display:none;
 }
 
 

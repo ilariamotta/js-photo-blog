@@ -1,4 +1,11 @@
+
+
+
 const photoGrid = document.getElementById("polaroid-grid");
+const loadingMan = document.getElementById("loader");
+
+
+
 axios.
     get("https://lanciweb.github.io/demo/api/pictures/")
     .then(function (resp) {
@@ -15,6 +22,11 @@ axios.
                 </div></div>`
         });
         photoGrid.innerHTML = curPolaroid;
-    });
+
+loader.classList.add("m-dnone");
+
+photoGrid.classList.remove("m-dnone");
+});
+
 
 

@@ -1,2 +1,32 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+/* COMMON */
 
 
+
+/* Typography */
+
+
+body {
+    font-family: sans-serif,
+}
+
+.my-title {
+    font-family: "Edu Tas Beginner", sans-serif;
+}
+
+.my-date {
+    font-family: "Sometype Mono", monospace;
+}
+
+/* Layout */
+
+/* Utilities */

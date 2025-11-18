@@ -9,12 +9,12 @@ STAMPARE DINAMICAMENTE IN UNA PAGINA BLOG LE FOTO DELL'ESTATE, CON TITOLO SOTTO.
 
 
 #PROCESSO:
-- [ ] realizzazione html e css di una sola fotografia
-    -[ ] creare header
-    -[ ] inserire nel body la griglia per le card fotografia
-    -[ ] creazione card fotografia
+- [x] realizzazione html e css di una sola fotografia
+    -[x] creare header
+    -[x] inserire nel body la griglia per le card fotografia
+    -[x] creazione card fotografia
 - [ ] impostazione logica javascript
-    -[ ] verifica chiamati API
+    -[x] verifica chiamati API
     -[ ] selezionare elementi dal dom
     -[ ] creazione di più card
     -[ ] stampaggio in pagina
@@ -22,4 +22,4 @@ STAMPARE DINAMICAMENTE IN UNA PAGINA BLOG LE FOTO DELL'ESTATE, CON TITOLO SOTTO.
 - [ ] BONUS
     -[ ] responsive
     -[ ] refactoring
-    -[ ] moviment card con css
+    -[ ] movimento card con css

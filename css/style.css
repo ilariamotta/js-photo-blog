@@ -105,14 +105,30 @@ header {
 /* MAIN */
 
 .m-card {
-background-color: white;
+    background-color: white;
+    height: 100%;
+    position: relative;
+}
+
+.m-pin {
+    position: absolute;
+    right: 45%;
+    top: -5%;
 }
 
 .m-card-img {
-width: 80%;
-padding-top: 20px;
+    width: 90%;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 .m-card-body {
+    margin-top: 5px;
+    padding-left: 10px;
+    text-align: left;
 
+}
+
+.m-card-body p {
+    margin: 0px;
 }

@@ -29,6 +29,14 @@ body {
 
 }
 
+.my-description {
+    font-family: "Edu Tas Beginner", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+
 .my-date {
     font-family: "Sometype Mono", monospace;
 }
@@ -49,8 +57,12 @@ body {
     margin: 0 auto;
 }
 
+.m-dcol {
+    flex-direction: column;
+}
+
 .m-col {
-    width: 30%;
+    width: 25%;
     border: 1px black solid;
 }
 
@@ -61,6 +73,15 @@ body {
 .m-justify-content-between {
     justify-content: space-between;
 }
+
+.m-justify-content-center {
+    justify-content: center;
+}
+
+.m-align-items {
+    align-items: center;
+}
+
 
 .m-wrap {
     flex-wrap: wrap;
@@ -77,5 +98,21 @@ header {
     background-color: lightgrey;
     background-image: url(../img/wall.png);
     height: 100px;
+
+}
+
+
+/* MAIN */
+
+.m-card {
+background-color: white;
+}
+
+.m-card-img {
+width: 80%;
+padding-top: 20px;
+}
+
+.m-card-body {
 
 }

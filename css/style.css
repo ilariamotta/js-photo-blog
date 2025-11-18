@@ -62,8 +62,9 @@ body {
 }
 
 .m-col {
-    width: 25%;
+    width: 100%;
     border: 1px black solid;
+    margin-bottom: 20px;
 }
 
 .m-flex {
@@ -113,7 +114,7 @@ header {
 .m-pin {
     position: absolute;
     right: 45%;
-    top: -5%;
+    top: -3%;
 }
 
 .m-card-img {
@@ -131,4 +132,22 @@ header {
 
 .m-card-body p {
     margin: 0px;
+}
+
+
+
+
+/* MEDIA QUERY */
+/* tablet */
+@media screen and (min-width: 768px) {
+    .m-col {
+        width: 50%;
+    }
+}
+/* desktop */
+
+@media screen and (min-width: 1024px) {
+    .m-col {
+        width: 30%;
+    }
 }

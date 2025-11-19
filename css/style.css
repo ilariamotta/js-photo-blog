@@ -186,7 +186,7 @@ header {
 }
 
 #bigPhoto {
-    width: 600px;
+    max-width: 90%;
     height: auto;
 
 }
@@ -223,12 +223,22 @@ button {
     #polaroid-grid {
         gap: 10px;
     }
-}
 
-/* desktop */
-
-@media screen and (min-width: 1024px) {
-    .m-col {
-        width: 30%;
+    #bigPhoto {
+        max-width: 500px;
+        height: auto;
     }
 }
+
+    /* desktop */
+
+    @media screen and (min-width: 1024px) {
+        .m-col {
+            width: 30%;
+        }
+
+        #bigPhoto {
+            max-width: 600px;
+            height: auto;
+        }
+    }

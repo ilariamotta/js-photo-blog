@@ -144,15 +144,19 @@ header {
 
 /* hover */
 
-
+.photo-polaroid {
+    cursor: pointer;
+}
 
 .m-card:hover {
-    transform: rotateZ(3deg) scale(1.1);
+    transform: rotateZ(10deg) scale(1.1);
 }
 
 .m-card:hover .m-pin {
     display: none;
 }
+
+
 
 
 

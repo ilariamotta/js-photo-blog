@@ -15,9 +15,19 @@ axios.
     get("https://lanciweb.github.io/demo/api/pictures/")
     .then(function (resp) {
         const photoArray = resp.data
-        let curPolaroid = "";
-        photoArray.forEach(curPhoto => {
-            curPolaroid += `<div class="m-col m-flex m-justify-content-between"><div class="m-card m-flex m-dcol">
+        printPolaroid(photoArray);
+        clickPhoto();
+        buttonClose();
+        loader.classList.add("m-dnone");
+        photoGrid.classList.remove("m-dnone");
+    });
+
+
+
+function printPolaroid(array) {
+    let curPolaroid = "";
+    array.forEach(curPhoto => {
+        curPolaroid += `<div class="m-col m-flex m-justify-content-between"><div class="m-card m-flex m-dcol">
                     <div class="m-pin"><img src="./img/pin.svg" alt=""></div>
                     <div class="m-card-img m-flex m-justify-content-center"><img class="photo-polaroid" src="${curPhoto.url}" alt=""></div>
                     <div class="m-card-body">
@@ -25,36 +35,27 @@ axios.
                         <p class="my-description">${curPhoto.title}</p>
                     </div>
                 </div></div>`
-
-        });
-        photoGrid.innerHTML = curPolaroid;
-
-        const polaroid = document.querySelectorAll(".photo-polaroid");
-
-        polaroid.forEach((element) => {
-            element.addEventListener("click", function () {
-                bigPhoto.src = element.src;
-                photoOverlay.classList.remove("hidden");
-
-                xButton.addEventListener("click", function () {
-                    photoOverlay.classList.add("hidden");
-                })
-
-            })
-        })
-
-        loader.classList.add("m-dnone");
-
-        photoGrid.classList.remove("m-dnone");
     });
+    photoGrid.innerHTML = curPolaroid;
+}
 
 
+function buttonClose(button) {
+    xButton.addEventListener("click", function () {
+        photoOverlay.classList.add("hidden");
+    })
+}
 
 
-
-
-
-
+function clickPhoto() {
+    const polaroid = document.querySelectorAll(".photo-polaroid");
+    polaroid.forEach((element) => {
+        element.addEventListener("click", function () {
+            bigPhoto.src = element.src;
+            photoOverlay.classList.remove("hidden");
+        })
+    })
+}
 
 
 

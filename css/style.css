@@ -115,7 +115,7 @@ header {
     background-color: white;
     height: 100%;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .m-pin {
@@ -204,6 +204,7 @@ button {
     align-items: center;
     color: lightgray;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    pointer-events: auto;
 
 }
 

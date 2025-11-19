@@ -78,6 +78,7 @@ body {
 
 .m-justify-content-center {
     justify-content: center;
+    align-items: center;
 }
 
 .m-align-items {
@@ -148,10 +149,42 @@ header {
 }
 
 .m-card:hover .m-pin {
-    display:none;
+    display: none;
 }
 
 
+
+/* OVERLAY CLICK */
+
+#photo-wrapper {
+    position: relative;
+
+}
+
+#bigPhoto {
+    width: 600px;
+    height: auto;
+
+}
+
+
+button {
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    border: 0px;
+    background-color: tomato;
+    position: absolute;
+    top: 14px;
+    right: 720px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 /* MEDIA QUERY */
@@ -165,6 +198,7 @@ header {
         gap: 10px;
     }
 }
+
 /* desktop */
 
 @media screen and (min-width: 1024px) {
